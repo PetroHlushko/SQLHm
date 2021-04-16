@@ -1,0 +1,17 @@
+create database library;
+
+create table book(
+id serial,
+name varchar(120) not null,
+description varchar(150) default 'No description' not null,
+publication_date date default '2018-01-01' not null,
+author varchar(60) not null,
+category varchar(30) not null
+);
+
+insert into book(name, description, publication_date, author, category)
+values
+('Harry Potter', 'A series of seven fantasy novels by English writer Joan Rowling.', '2001-11-04', 'Joanne Rowling', 'Fantasy');
+insert into book(name, description, publication_date, author, category)
+values
+('Green mile', 'The novel was awarded the Bram Stoker Awards in 1996. Based on it, a film of the same name was made in 1999.', '1999-04-12', 'Stephen King', 'Novel');
