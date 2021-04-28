@@ -1,7 +1,6 @@
 create database library;
 
 create table book(
-id serial,
 name varchar(120) not null,
 description varchar(150) default 'No description' not null,
 publication_date date default '2018-01-01' not null,
